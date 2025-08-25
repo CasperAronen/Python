@@ -1,6 +1,6 @@
 import random
 
-kolme = random.sample(range(1,10),3)
+kolme = random.sample(range(0,10),3)
 
 nelja = random.sample(range(1,7),4)
 
