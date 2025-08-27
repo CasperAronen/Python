@@ -12,6 +12,6 @@ while yritys <4:
         Sarvaus = input("Anna salasana: ")
     else:
         print("Tervetuloa")
-        break
+        exit()
 print("Pääsy kielletty")
 

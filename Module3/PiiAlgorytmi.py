@@ -1,17 +1,16 @@
-import math
 import random
 
+num_points = int(input("Anna pisteiden määrä: "))
 
-def monteCarloPii(n_piste):
-    ympyrän_sisä = 0
+n_circle = 0
 
-    for _ in range(n_piste):
-        x, y = random.uniform(-1, 1), random.uniform(-1, 1)
-        if x**2 + y**2 <= 1:
-            ympyrän_sisä += 1
-    return 4 * ympyrän_sisä / n_piste
+for _ in range(num_points):
+    x = random.uniform(0, 1)
+    y = random.uniform(0, 1)
+    dx = x - 0.5
+    dy = y - 0.5
+    if dx * dx + dy * dy <= 0.25:
+        n_circle += 1
 
-n_piste = 5000000
-
-print(monteCarloPii(n_piste))
-print((math.pi))
+pi = 4 * n_circle / num_points
+print(f"{pi:.6f}")
