@@ -1,14 +1,14 @@
 LukuLista=[]
 while True:
     try:
-        luku = int(input("anna lukuja lopeta antamalla tyhjä: "))
+        luku = float(input("anna lukuja lopeta antamalla tyhjä: "))
         LukuLista.append(luku)
     except ValueError:
         break
+
 LukuLista.sort(reverse=True)
-print(LukuLista[0:5])
-
-
+for i in range(0, len(LukuLista[0:5])):
+    print(LukuLista[i])
 
 #Kirjoita ohjelma, joka kysyy käyttäjältä lukuja siihen saakka, kunnes tämä syöttää tyhjän merkkijonon
 #lopetusmerkiksi. Lopuksi ohjelma tulostaa saaduista luvuista viisi suurinta suuruusjärjestyksessä suurimmasta

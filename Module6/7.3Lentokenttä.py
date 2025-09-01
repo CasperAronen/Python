@@ -1,0 +1,4 @@
+Lentokemmttä = []
+ICAOkoodi = []
+
+while True:

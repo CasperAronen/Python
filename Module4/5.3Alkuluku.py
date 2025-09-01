@@ -6,7 +6,6 @@ def onAlkunum(num):
         if num % i == 0:
             return False
     return True
-#user_input
 try:
     numCheck = int(input("Anna numero: "))
 except ValueError:
