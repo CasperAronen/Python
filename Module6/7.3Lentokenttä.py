@@ -9,7 +9,7 @@ while True:
     if toiminto == "uusi":
         lentokentta = input("Minkä nimisen lentokentän haluat lisätä: ")
         Lentokentta.append(lentokentta)
-        koodi = input("Anna ICAO-koodi ")
+        koodi = (input("Anna ICAO-koodi "))
         ICAOkoodi.append(koodi)
     elif toiminto == "valinta":
         haku = input("Hae lentokenttä ICAO-koodilla: ")
