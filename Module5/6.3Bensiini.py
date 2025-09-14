@@ -1,13 +1,10 @@
-gallon = float(input("Anna galonin määrä: "))
+def gallons_to_liters(galloM):
+    return galloM * 3.785
 
-def BensaMuunnos():
-    gallonM = gallon * 3.785
-    return gallonM
 while True:
-    if gallon > 0:
-        BensaMuunnos()
-        print("Bensa muunnos:", BensaMuunnos())
-        gallon = float(input("Anna galonin määrä: "))
-    else:
-        print("Bensa loppu idiotos")
+    gallon = float(input("Enter a volume in American gallons (negative value to quit): "))
+    if gallon < 0:
+        print("Program finished.")
         break
+    liters = gallons_to_liters(gallon)
+    print(f"{gallon:.1f} American gallons is {liters:.2f} liters.")
