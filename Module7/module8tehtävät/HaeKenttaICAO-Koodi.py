@@ -9,7 +9,7 @@ yhteys = mysql.connector.connect(
          autocommit=True,
          collation='utf8mb3_general_ci',
          )
-koodi = input("Hae lentokentta ja siejantikunta icao koodilla: ")
+koodi = input("Hae lentokentta ja siejantikunta icao koodilla: ").upper()
 def haeKenttaIdent(koodi):
     sql = f"SELECT name, municipality FROM airport WHERE ident = '{koodi}'"
     print(sql)
@@ -17,7 +17,8 @@ def haeKenttaIdent(koodi):
     kursori.execute(sql)
     rivi = kursori.fetchone()
     if rivi:
-        print(rivi)
+        print(f"Lentokentän nimi: {rivi[0]}")
+        print(f"Sijaintikunta: {rivi[1]}")
     else:
         print("Kenttää ei löytynyt")
 haeKenttaIdent(koodi)
