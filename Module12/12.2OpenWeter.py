@@ -7,7 +7,7 @@ def hae_saa(paikkakunta, api_avain):
         data = vastaus.json()
         lampotila = data["main"]["temp"]
         kuvaus = data["weather"][0]["description"]
-        print(f"Sää paikkakunnalla {paikkakunta.capitalize()}: {kuvaus} Lämpötila: {lampotila:.1f} °C")
+        print(f"Sää {kuvaus} Lämpötila: {lampotila:.1f} °C")
     else:
         print("Paikakuntaa ei ole")
 
