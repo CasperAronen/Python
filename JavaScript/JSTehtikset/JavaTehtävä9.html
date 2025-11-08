@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Java tehtävä 9</h1>
+<h1>prime number</h1>
+<h1 id="num"></h1>
+<script>
+  let teksti = document.getElementById("num");
+  teksti.innerText = "";
+
+  const paa = parseInt(prompt("Anna luku:"));
+  let onAlkuluku = true; // määritetään heti alkuun
+
+  if (paa <= 1) {
+    teksti.innerText = paa + " ei ole alkuluku";
+  } else {
+    for (let i = 2; i <= Math.sqrt(paa); i++) {
+      if (paa % i === 0) {
+        onAlkuluku = false;
+        break;
+      }
+    }
+
+    if (onAlkuluku) {
+      teksti.innerText = paa + " on alkuluku";
+    } else {
+      teksti.innerText = paa + " ei ole alkuluku";
+    }
+  }
+</script>
+</body>
+</html>

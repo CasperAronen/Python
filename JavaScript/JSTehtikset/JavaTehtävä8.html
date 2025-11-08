@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Java tehtävä 8</h1>
+<h1>Alku ja Loppu vuosi</h1>
+<ul id="vuosi"></ul>
+
+<script>
+    const alku = parseInt(prompt("Anna alku vuosi"))
+    const loppu = parseInt(prompt("Anna loppu vuosi"))
+    const vuosi = document.getElementById("vuosi")
+
+    for (let vu = alku; vu <= loppu; vu++){
+        if ((vu % 4 === 0 && vu % 100 !== 0) || vu % 400 === 0) {
+            const li = document.createElement("li");
+            li.textContent = vu;
+            vuosi.appendChild(li);
+        }
+    }
+
+</script>
+
+</body>
+</html>

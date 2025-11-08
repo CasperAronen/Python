@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Java tehtävä 3</h1>
+<h1>Komle integeri</h1>
+<h1 id="tulos"></h1>
+<h1 id="tulosJ"></h1>
+<body>
+<script>
+    const eka = parseInt(prompt("Anna eka numero"))
+    const toka = parseInt(prompt("Anna toka numero"))
+    const kolmas = parseInt(prompt("Anna kolmas numero"))
+    const tulos = eka + toka + kolmas
+    const tulosJ = tulos/3
+
+    document.getElementById("tulos").innerText = "Summa " + tulos;
+    document.getElementById("tulosJ").innerText = "Keskiarvo "+ tulosJ;
+</script>
+</body>
+</html>

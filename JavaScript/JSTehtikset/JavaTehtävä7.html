@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Java tehtävä 7</h1>
+<h1>Nopat</h1>
+<h1 id="aha"></h1>
+
+<script>
+    let total = 0
+    const maara = parseInt(prompt("Anna noppien määrä"))
+    for (let i = 1; i <= maara; i++){
+        let sum = Math.floor(Math.random()*6 )+1;
+        total += sum;
+    }
+    document.getElementById("aha").innerText = "Noppien summa " + total;
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Java tehtävä 4</h1>
+<h1>Harri potteri</h1>
+<h1 id="jaa"></h1>
+<body>
+<script>
+    const nimi = prompt("Anna nimi")
+    const satu = Math.floor(Math.random() * 4) +1
+    let teksti = ""
+    if (satu === 1){
+        teksti = nimi + "Olet Gryffindor"
+    }
+    else if (satu === 2){
+        teksti = nimi + "Olet Slytherin"
+    }
+    else if (satu === 3){
+        teksti = nimi + "Olet Ravenclaw"
+    }
+    else if (satu === 4){
+        teksti = nimi + "Olet Hufflepuff"
+    }
+
+    document.getElementById("jaa").innerText = teksti;
+</script>
+</body>
+</html>

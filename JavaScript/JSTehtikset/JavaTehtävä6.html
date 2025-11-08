@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Java tehtävä 6</h1>
+<h1>Neliö juuri</h1>
+<h1 id="juuri"></h1>
+<body>
+<script>
+    let sqrt = confirm("Pitäisikö laskea neliö juuri?")
+
+    if (sqrt === true){
+        const  numero = parseInt(prompt("Anna numero"))
+        document.getElementById("juuri").innerText = Math.sqrt(numero)
+    }
+    else{
+        document.getElementById("juuri").innerText = "Ei sit"
+    }
+</script>
+</body>
+</html>

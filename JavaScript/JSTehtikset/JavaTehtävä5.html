@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Java tehtävä 5</h1>
+<h1>Karkaus vuosi</h1>
+<h1 id="Js"></h1>
+<script>
+    const vuosi = parseInt(prompt("Anna vuosi "))
+    let teksti = ""
+    if (vuosi % 4 === 0 && vuosi % 100 === 0 || vuosi % 400 === 0 ){
+        teksti = "Vuosi " + vuosi + " On karkaus vuosi"
+    }
+    else{
+        teksti = "Vuosi " + vuosi + " Ei ole karkaus vuosi"
+    }
+    document.getElementById("Js").innerText = teksti;
+</script>
+</body>
+</html>
