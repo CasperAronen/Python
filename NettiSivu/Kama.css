@@ -1,0 +1,148 @@
+header {
+    background-color: hotpink;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#id {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+#muumi{
+    width: 60px;
+    height: 60px;
+}
+.muumiKontainer{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px 30px;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    background-image: url(kuvatJaGifut/tsukasa.gif);
+    background-size: 100px;
+     background-repeat: repeat;
+    background-position: 0 0;
+    animation: moveBg 10s linear infinite;
+}
+
+@keyframes moveBg {
+    from { background-position: 0 0; }
+    to   { background-position: -200px 200px; }
+}
+#PääKuva{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 80%;
+  height: 200px;
+}
+
+.laatikot {
+    display: flex;
+    justify-content: space-between; /* tasainen jakautuminen */
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.laatikko{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    width: 200px;
+    border: 1px  solid black;
+    background-color: white;
+}
+.laatikko img {
+    display: block;
+  margin: 15px auto 5px;
+  width: 100%;
+  height: 150px;
+    object-fit: contain;
+}
+.laatikko p {
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+}
+
+.laatikko b {
+    color: black;
+    margin: 10px 0;
+}
+.haalennettu {
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+#imgDiv {
+  position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+
+#imgDiv img {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#imgRegular {
+  opacity: 1;
+  z-index: 1;
+  transition: none;
+}
+
+#imgHover {
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 1s ease;
+}
+#hoverText:hover ~ #imgDiv #imgHover {
+  opacity: 1;
+}
+#myyntiT{
+    color: black;
+    font-weight: bold ;
+    width: 80%;
+  margin: 0 auto;
+    padding: 10px;
+}

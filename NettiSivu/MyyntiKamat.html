@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Kama.css">
+</head>
+<body>
+    <header>
+        <div class="muumiKontainer">
+            <img src="kuvatJaGifut/muumi.png" id="muumi">
+        </div>
+         <nav>
+            <a href="HimoSivu.html">Etusivu</a>
+            <a href="">Myyntikamat</a>
+            <a href="Contacts.html">Yhteystiedot</a>
+         </nav>
+        </header>
+<img src="kuvatJaGifut/GdTeet.gif" id="PääKuva">
+<h3 id="myyntiT">Täällä Himokomppanian tuotteita myydään erittäin harvinaisia tuotteita. jotakin jotakin lorem ipsum jopsum saadaanmpas vähän tekstiä lisää opsum. Nythän sitä alkaa ollakkin juhuu yipee alla tuotteet</h3>
+<div class="laatikot">
+  <div class="laatikko">
+    <b>Astolfo</b>
+    <div id="imgDiv">
+  <img id="imgRegular" src="kuvatJaGifut/atolfo.jpg" />
+  <img id="imgHover" src="kuvatJaGifut/DoakesHd.gif" />
+</div>
+     <p class="haalennettu"> Atolfo</p>
+    <p id="hoverText">Käytetty</p>
+  </div>
+  <div class="laatikko">
+      <b>Chudda</b>
+    <img src="kuvatJaGifut/chudda.jpg" alt="Kuva 2">
+      <p class="haalennettu">Chudda</p>
+    <p>Jonkin tuumainen tulevaisuuden ennustaja. Kertoo millä mahollisuudella jotaki tapahtuu</p>
+  </div>
+  <div class="laatikko">
+      <b id="randomT0">Saatanan luurinki</b>
+    <img id="random" src="kuvatJaGifut/touch.jpg" alt="Kuva 3">
+    <p id="randomT" class="haalennettu">Saatanan luurinki</p>
+      <p id="randomT2">Tää saatanan luurinki tulee ja seuraa sua</p>
+
+  </div>
+</div>
+<script>
+const hoverText = document.getElementById('hoverText');
+const imgHover = document.getElementById('imgHover');
+
+let hoverTimeout;
+
+hoverText.addEventListener('mouseenter', () => {
+  hoverTimeout = setTimeout(() => {
+    imgHover.style.opacity = 1;
+  }, 10000);
+});
+
+hoverText.addEventListener('mouseleave', () => {
+  clearTimeout(hoverTimeout);
+  imgHover.style.opacity = 0;
+});
+
+const img = document.getElementById("random");
+const text = document.getElementById("randomT")
+const text1 = document.getElementById("randomT0")
+const info = document.getElementById("randomT2")
+  const chance = Math.random();
+
+  if (chance < 0.05) {
+      img.src = "kuvatJaGifut/touch.jpg";
+      text.textContent = "Kosku sun goldne dingakin";
+      text1.textContent = "Kosku sun goldne dingakin";
+      info.textContent = "golden dingalin"
+  } else {
+      img.src = "kuvatJaGifut/Behind.png";
+  }
+</script>
+</body>
+
+</html>

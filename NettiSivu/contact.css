@@ -14,7 +14,17 @@ header {
     justify-content: flex-start;
     gap: 10px;
 }
-
+#muumi{
+    width: 60px;
+    height: 60px;
+}
+.muumiKontainer{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px 30px;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 header nav {
     display: flex;
     gap: 30px;
@@ -55,7 +65,6 @@ body {
 .tietoTeksti {
   flex: 1;
   color: black;
-  padding: 20px;
 }
 
 
@@ -65,10 +74,27 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  margin-top: -30px;
 }
 
 .kuva img {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   object-fit: cover;
+}
+#Cont{
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0;
+    margin-left: 35px;
+    margin-top: 0;
+}
+.korosta{
+    font-weight: bold;
+}
+.tietoTeksti h1,
+.tietoTeksti p {
+  margin: 0;
+  padding: 0;
 }

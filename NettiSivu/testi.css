@@ -1,0 +1,28 @@
+#imgDiv {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+#imgDiv img {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#imgRegular {
+  opacity: 1;
+  z-index: 1;
+  transition: none;
+}
+
+#imgHover {
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 1s ease 3s; /* fade kestää 1s, viive 30s */
+}
+#hoverText:hover + #imgDiv #imgHover {
+  opacity: 1;
+}
