@@ -21,7 +21,7 @@ header {
 }
 .muumiKontainer{
     background: rgba(0, 0, 0, 0.5);
-    padding: 7px 30px;
+    padding: 8.5px 30px;
     flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .kuvaContainer {
@@ -79,6 +80,8 @@ body {
 }
 #companyH1{
     font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: #ffffff;
 }
 .Teksti {
   max-width: 920px;
@@ -86,4 +89,6 @@ body {
   margin-top: 10px;
   text-align: left;
   word-wrap: break-word;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }

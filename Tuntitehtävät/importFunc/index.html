@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esimerkkiraportti — Testitulokset</title>
+
+  <!-- Google Font (esimerkki) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Esimerkki CSS: käytetty fontti 'Inter' Google Fontsista */
+    :root {
+      --max-width: 1000px;
+      --accent: #0b5fff;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 40px;
+      background: #f7f8fb;
+      color: #111827;
+      line-height: 1.45;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+    }
+    h1 {
+      font-weight: 800;
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+    p.lead {
+      margin-top: 0;
+      color: #374151;
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .screenshot {
+      border: 1px solid #e6e9ef;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      padding: 12px;
+    }
+    .screenshot img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    pre {
+      background: #0f1724;
+      color: #e6eef8;
+      padding: 12px;
+      border-radius: 8px;
+      overflow: auto;
+    }
+    .note {
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 12px;
+    }
+    /* Esimerkki @font-face (jos haluat toimittaa oman fonttitiedoston)
+       @font-face {
+         font-family: "OmaFontti";
+         src: url("fonts/OmaFontti.woff2") format("woff2"),
+              url("fonts/OmaFontti.woff") format("woff");
+         font-weight: 400 800;
+         font-style: normal;
+         font-display: swap;
+       }
+       body { font-family: "OmaFontti", Inter, system-ui, sans-serif; }
+    */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Auditin testitulokset</h1>
+    <p class="lead">Tässä on esimerkki HTML-dokumentista, joka sisältää kuvankaappaukset testien tuloksista ja esimerkin CSS-koodista käyttämästäsi fontista.</p>
+
+    <section class="screenshots" aria-label="Testitulosten kuvankaappaukset">
+      <figure class="screenshot">
+        <img src="screenshot_1.png" alt="Kuvankaappaus testituloksista 1" />
+        <figcaption>Screenshot 1 — yleiskatsaus suorituskykyyn ja saavutettavuuteen.</figcaption>
+      </figure>
+
+      <figure class="screenshot">
+        <img src="screenshot_2.png" alt="Kuvankaappaus testituloksista 2" />
+        <figcaption>Screenshot 2 — Lighthouse mobile audit -esimerkki.</figcaption>
+      </figure>
+    </section>
+
+    <h2>Esimerkki CSS-koodista (käytetty fontti)</h2>
+    <p class="note">Alla näkyvä CSS näyttää, miten liität Google Fonts -fontin ja miten määrittelet oman @font-face -säännön, jos toimitat fonttitiedoston.</p>
+
+    <pre><code>
+/* Google Fonts -esimerkki */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap');
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #111827;
+}
+
+/* @font-face -esimerkki omalle fontille (tarvitset .woff/.woff2-tiedostot) */
+@font-face {
+  font-family: 'OmaFontti';
+  src: url('fonts/OmaFontti.woff2') format('woff2'),
+       url('fonts/OmaFontti.woff') format('woff');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header {
+  font-family: 'OmaFontti', 'Inter', sans-serif;
+  font-weight: 700;
+}
+    </code></pre>
+
+    <p class="note">Voit ladata tämän tiedoston ja avata sen selaimessa. Kuvankaappaukset löytyvät samasta kansiosta nimillä <code>screenshot_1.png</code> ja <code>screenshot_2.png</code>.</p>
+  </div>
+</body>
+</html>

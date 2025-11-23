@@ -20,7 +20,7 @@ header {
 }
 .muumiKontainer{
     background: rgba(0, 0, 0, 0.5);
-    padding: 7px 30px;
+    padding: 8.5px 30px;
     flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -51,6 +51,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .tiedot {
